@@ -1,0 +1,28 @@
+{% extends "appointments/base.html" %}
+
+
+{% block content %}
+<table class="table table-striped">
+    <thead class="font-weight-bold">
+        <tr>
+            <td>Student Number</td>
+            <td>Student Name</td>
+            <td>Appointment Date</td>
+            <td>Appointment Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for appointment in appointment_list %}
+        <tr>
+            <td>{{appointment.student_number}}</td>
+            <td>{{appointment.student_name}}</td>
+            <td>{{appointment.app_date}}</td>
+            <td>{{appointment.app_desc}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<br>
+<a class="btn btn-primary " style="width: 100%;" href="/appointments">Add New Appointment</a>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "appointments/base.html" %}
+{% load crispy_forms_tags %}
+
+
+
+
+{% block content %}
+<form action="" method="POST" autocomplete="off">
+    {% csrf_token %}
+{{form.student_number|as_crispy_field}} <br>
+{{form.student_name|as_crispy_field}} <br>
+{{form.app_date|as_crispy_field}} <br>
+{{form.app_desc|as_crispy_field}} <br>
+
+<button type="submit" class="btn btn-primary " style="width: 100%;">Add Your Appointment</button>
+</form>
+
+
+{% endblock content %}
+
