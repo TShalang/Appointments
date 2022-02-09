@@ -12,11 +12,11 @@ An app for users to schedule an appointment.
 ### Screenshots
 
 <p float="left">
-  <img src="Images/Appointments="500 />  
+  <img src="Images/Appointments="500" />  
 </p>
 
 <p float="left">
-  <img src="Images/AddAppointment="500 
+  <img src="Images/AddAppointment="500" /> 
 </p>
 
 ## My process
